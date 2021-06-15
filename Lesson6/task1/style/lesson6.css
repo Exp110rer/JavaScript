@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.site{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    height: 50px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:darkblue;
+}
+
+.logo{
+    height: 100%;
+}
+
+.basket{
+    color: red;
+    background-color: bisque;
+    height: 100%;
+}
+
+.body{
+    min-width: 800px;
+    background-color: khaki;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    background-color: grey;
+    align-items: center;
+}
