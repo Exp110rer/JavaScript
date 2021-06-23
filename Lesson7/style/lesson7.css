@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.site{
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.header{
+    background-color: gray;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_title{
+    font-size:7vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+.main{
+    flex-grow: 1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    position:relative;
+}
+
+.gallery{
+    position:absolute;
+    top:10vh;
+    width: 70vw;
+    height: 70vh;
+    min-height: 550px;
+    min-width: 1000px;
+    background: lightgray;
+    justify-content: space-between;
+    align-items: center;
+    display:none;
+}
+
+.gallery_image{
+    /* width:50%; */
+    height:90%;
+}
+
+.gallery_button{
+    font-size: 5vh;
+    cursor:pointer;
+}
+
+.cart_view{
+    position:absolute;
+    width: 500px;
+    min-height: 300px;
+    background: lightgray;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cart_view_next_button{
+    align-self: center;
+}
+
+.address{
+    position:absolute;
+    width: 500px;
+    min-height: 300px;
+    background: lightgray;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.address_close_button{
+    align-self: center;
+}
+
+.product_card{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 15px 15px 15px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:antiquewhite;
+}
+
+.product_card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.product_card__image{
+    width: 40%;
+    cursor:pointer;
+}
+
+.product_card__button{
+    cursor:pointer;
+}
+
+.cart{
+    width:250px;
+    height: 70px;
+    color: white;
+    position:absolute;
+    top: 1vh;
+    right: 1vw;
+    background-color: red;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+
+.cart_text{
+    font-size: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.cart_clear_button{
+    width: 100px;
+    height: 25px;
+    align-self: center;
+    cursor:pointer;
+}
+
+.footer{
+    background-color: lightgray;
+    height: 5vh;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.footer_title{
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkslategrey;
+}
